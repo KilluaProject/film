@@ -8,10 +8,10 @@ import { DarkMode } from './DarkMode'
 
 export const Headers = () => {
   return (
-    <div className='flex justify-between max-w-6xl sm:mx-auto items-center p-6 border-b'>
+    <div className='flex justify-between max-w-6xl sm:mx-auto items-center p-6'>
       <div className="flex gap-2">
       <Menu tittle="Home" address="/" Icon={AiFillHome}/>
-      <Menu tittle="About" address="/about" Icon={AiFillInfoCircle}/>
+      <Menu tittle="About" address="./about" Icon={AiFillInfoCircle}/>
       </div>
 
       <div className="flex gap-2 items-center">
