@@ -3,7 +3,6 @@ import Menu from './Menu'
 import {AiFillHome} from "react-icons/ai"
 import {AiFillInfoCircle} from "react-icons/ai"
 import Link from 'next/link'
-import { DarkMode } from './DarkMode'
 
 
 export const Headers = () => {
@@ -14,8 +13,7 @@ export const Headers = () => {
       <Menu tittle="About" address="/about" Icon={AiFillInfoCircle}/>
       </div>
 
-      <div className="flex gap-2 items-center">
-        <DarkMode/>
+      <div className="">
         <Link href="/">
         
         <h2 className='text-2xl'>

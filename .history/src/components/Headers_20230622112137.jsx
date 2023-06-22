@@ -14,7 +14,7 @@ export const Headers = () => {
       <Menu tittle="About" address="/about" Icon={AiFillInfoCircle}/>
       </div>
 
-      <div className="flex gap-2 items-center">
+      <div className="flex">
         <DarkMode/>
         <Link href="/">
         
