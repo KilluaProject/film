@@ -18,11 +18,9 @@ export default async function Home ({searchParams}) {
     throw new Error ("Failed to fetch data")
   }
 
-  const data = await res.json();
-  const results = data.results;
    
   return (
     <div>
-      <Results results={results}/>
+      <Results results={data}/>
     </div>
 )}
