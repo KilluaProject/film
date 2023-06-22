@@ -19,7 +19,7 @@ export const DarkMode = () => {
     <div className='flex items-center gap-3'>
       
         { mounted && (currentTheme === "dark" ? (
-          <MdLightMode className='text-xl hover:text-orange-300 cursor-pointer' onClick={() => setTheme("light")}/>      
+          <MdLightMode tittle="Dark" className='text-xl hover:text-orange-300 cursor-pointer' onClick={() => setTheme("light")}/>      
         ) : (
             <BsMoonStarsFill className='text-xl hover:text-orange-300 cursor-pointer' onClick={() => setTheme("dark")}/>  
         ) )}

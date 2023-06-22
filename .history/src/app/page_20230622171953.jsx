@@ -21,7 +21,7 @@ export default async function Home ({searcParams}) {
 
   return (
     <div>
-      <Results results={results}/>
+      <Results/>
     </div>
   )
 }
