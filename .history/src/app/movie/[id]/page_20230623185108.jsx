@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-
+import { FiThumbsUp } from 'react-icons/fi';
 
 async function getMovie(movieId){
     const res = await fetch (`https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`);
@@ -33,7 +33,7 @@ export default async function MoviePage({params}) {
             <p className='flex items-center gap-3'>
 
                 <span>Popularity : </span>
-                
+                <FiThumbsUp/>
                 {movie.popularity}
             </p>
         </div>

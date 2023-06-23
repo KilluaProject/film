@@ -3,8 +3,6 @@ import { Inter, Roboto, Poppins } from 'next/font/google'
 import { Headers } from '@/components/Headers'
 import { Providers } from './Providers'
 import Navbar from '@/components/Navbar'
-import SearchBox from '@/components/SearchBox'
-
 
 
 const poppins = Poppins({ subsets: ['latin'],weight: ['300', '700','500'] })
@@ -24,9 +22,7 @@ export default function RootLayout({ children }) {
           <Headers/>
           <Navbar/>
           <SearchBox/>
-          
           {children}
-         
 
 
         </Providers>

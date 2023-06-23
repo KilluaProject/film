@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react'
-
+import { FiThumbsUp } from 'react-icons/fi';
 
 async function getMovie(movieId){
     const res = await fetch (`https://api.themoviedb.org/3/movie/${movieId}?api_key=${process.env.API_KEY}`);

@@ -6,7 +6,6 @@ import Navbar from '@/components/Navbar'
 import SearchBox from '@/components/SearchBox'
 
 
-
 const poppins = Poppins({ subsets: ['latin'],weight: ['300', '700','500'] })
 
 export const metadata = {
@@ -26,7 +25,6 @@ export default function RootLayout({ children }) {
           <SearchBox/>
           
           {children}
-         
 
 
         </Providers>
