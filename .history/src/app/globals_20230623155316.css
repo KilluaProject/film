@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 html : :-webkit-scrolbar {
-display: none;
-},
+display : none;
+}
 
 html {
-scrolbar-width: none;
+scrolbar-width : none;
 }
