@@ -4,6 +4,7 @@ import { Headers } from '@/components/Headers'
 import { Providers } from './Providers'
 import Navbar from '@/components/Navbar'
 
+const inter = Inter({ subsets: ['latin'] })
 const poppins = Poppins({ subsets: ['latin'],weight: ['300', '700','500'] })
 
 export const metadata = {

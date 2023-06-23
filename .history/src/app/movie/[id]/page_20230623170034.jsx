@@ -12,7 +12,7 @@ export default async function MoviePage({params}) {
     const movieId = params.id;
     const movie = await getMovie(movieId)
   return (
-    <div className="flex items-center justify-center pt-10 px-4">
+    <div className='flex items-center justify-center pt-10 px-4'>
 
         <div className="md:pt-8 flex flex-col gap-3 md:flex-row items-center content-center mx-auto max-w-6xl md:space-x-6">
         
@@ -21,7 +21,7 @@ export default async function MoviePage({params}) {
                 maxWidth: "100%",
                 height: "auto",
             }
-        } placeholder="blur" blurDataURL="/spinner.svg"  src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path||movie.poster_path}`}width={500} height={500} alt="poster-movie" className="rounded-md group-hover:opacity-80 transition-opacity duration-200"></Image>
+        } placeholder='blur' blurDataURL='/spinner.svg'  src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path||movie.poster_path}`}width={500} height={500} all="poster-movie" className='rounded-md group-hover:opacity-80 transition-opacity duration-200'></Image>
 
         <div className='flex flex-col gap-3'>
             <h2 className='text-2xl'>{movie.title || movie.name}</h2>

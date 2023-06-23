@@ -15,7 +15,7 @@ export default function Card({result}) {
                 maxWidth: "100%",
                 height: "auto",
             }
-        } placeholder="blur" blurDataURL="/spinner.svg"  src={`https://image.tmdb.org/t/p/original/${result.backdrop_path||result.poster_path}`}width={500} height={300} alt="poster-movie" className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"/>
+        } placeholder='blur' blurDataURL='/spinner.svg'  src={`https://image.tmdb.org/t/p/original/${result.backdrop_path||result.poster_path}`}width={500} height={300} alt="poster-movie" className='sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200'/>
         <div className="py-2 space-y-2">
             <p className="truncate font-light line-clamp-2">{result.overview}
             </p>
